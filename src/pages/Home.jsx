@@ -1,6 +1,11 @@
-const Home = () => {
+import Header from '../components/Header/Header.jsx';
 
-  return();
+const Home = () => {
+  return(
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Home;
