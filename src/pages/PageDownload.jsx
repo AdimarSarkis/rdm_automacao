@@ -1,4 +1,4 @@
-import ButtonsDownloads from '../components/ButtonsDownloads/ButtonsDownloads.jsx';
+import ButtonsDownloads from '../components/ButtonsDownloads/index.jsx';
 import { getStorage, ref } from "firebase/storage";
 import "../backend/index"
 

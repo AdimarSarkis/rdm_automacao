@@ -1,0 +1,49 @@
+.card{
+  border-sizing
+  width: 500px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  gap: 10px;
+  box-shadow:
+    1.6px 0.7px 2.2px rgba(0, 0, 0, 0.123),
+    3.8px 1.7px 5.3px rgba(0, 0, 0, 0.155),
+    7.1px 3.1px 10px rgba(0, 0, 0, 0.168),
+    12.7px 5.6px 17.9px rgba(0, 0, 0, 0.168),
+    23.8px 10.4px 33.4px rgba(0, 0, 0, 0.156),
+    57px 25px 80px rgba(0, 0, 0, 0.11);
+}
+.card:hover{
+  box-shadow:
+    1.6px 0.7px 2.2px rgba(238, 150, 26, 0.123),
+    3.8px 1.7px 5.3px rgba(238, 150, 26,0.155),
+    7.1px 3.1px 10px rgba(238, 150, 26, 0.168),
+    12.7px 5.6px 17.9px rgba(238, 150, 26, 0.168),
+    23.8px 10.4px 33.4px rgba(238, 150, 26,0.156),
+    57px 25px 70px rgba(238, 150, 26,0.11)
+}
+.icon{
+  font-size: 4rem;
+  color: #ee961a;
+  filter: drop-shadow(2px 1px 2px #000));
+}
+.title{
+  color: #ee961a;
+}
+span{
+  text-align: justify;
+  text-justify: inter-character;
+}
+span ul {
+  list-style-type: circle;
+}
+@media (max-width: 600px){
+  .card{
+    width: 90vw;
+  }
+}

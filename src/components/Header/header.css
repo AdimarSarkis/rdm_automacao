@@ -1,15 +1,15 @@
 header{
   z-index: 999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: fixed;
+  width: 98%;
+  top: 10px;
+  margin: 0 0.8vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 200px;
+  padding: 15px 90px;
   transition: 0.5s ease;
-  background: #323232
+  background: #323232;
 }
 
 header .brand img{
@@ -26,13 +26,24 @@ header .navigation .navigation-items a{
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
-  padding: 5px
+  padding: 5px;
+  text-transform: uppercase;
 }
 
-header .navigation .navigation-items a:before{
+header .navigation .navigation-items a:last-child{
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 5rem;
+}
+header .navigation .navigation-items a:last-child:hover{
+  border: 2px solid #ee961a;
+  color: #ee961a;
+  transition: 0.3s ease-in-out;
+}
+header .navigation .navigation-items a:not(:last-child):before{
   content: '';
   position: absolute;
-  background: #fff;
+  background: #ee961a;
   width: 0;
   height: 3px;
   bottom: -2px;
@@ -40,7 +51,7 @@ header .navigation .navigation-items a:before{
   transition: 0.3s ease;
 }
 
-header .navigation .navigation-items a:hover:before{
+header .navigation .navigation-items a:not(:last-child):hover:before{
   width: 100%;
 }
 

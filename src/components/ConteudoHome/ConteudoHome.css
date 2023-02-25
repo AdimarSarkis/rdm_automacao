@@ -1,0 +1,30 @@
+.img{
+  height: 80vh;
+  width: 100vw;
+  background-image: url(../../assets/fachadaRdm.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.conteudo-home{
+  border: 1px solid #000;
+  padding: 50px;
+}
+.cards{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 780px){
+  .conteudo-home{
+    padding: 20px;
+  }
+}
