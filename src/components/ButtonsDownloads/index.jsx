@@ -12,7 +12,8 @@ const ButtonsDownloads = ({
     aTag.click();
     aTag.remove();
   }
-
+  
+  
   
   return(
     <button onClick={() => downloadFileAtUrl(url)}>

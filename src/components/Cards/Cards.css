@@ -1,5 +1,4 @@
 .card{
-  border-sizing
   width: 500px;
   padding: 50px;
   display: flex;
@@ -7,7 +6,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-bottom: 50px;
   gap: 10px;
   box-shadow:

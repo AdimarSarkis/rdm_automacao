@@ -39,12 +39,11 @@ const ConteudoHome = () => {
     <>
       <div className="img"></div>
       <div className="conteudo-home">
-        <span>
+        <span className='inicial'>
 A RDM Automação oferece uma ampla variedade de serviços para atender cada tipo de negócio,
 trazendo soluções Completas e avançadas
 Trabalhamos com serviços e produtos de primeira linha a fim de proporcionar aos nossos clientes conforto e segurança na hora de automatizar seu estabelecimento. 
-Utilizando o poderoso Sistema CISSPoder traz divervas vantagens 
-        </span>
+Utilizando o poderoso Sistema CISSPoder traz divervas vantagens</span>
         <div className='cards'>
           <Cards 
             title="Oferecendo para sua loja"
@@ -53,7 +52,7 @@ Utilizando o poderoso Sistema CISSPoder traz divervas vantagens
           />
           <Cards 
             title="Suporte ágil com a RDM Automação"
-            icone=""
+            icone="messsage"
             body={suporteRdm}
           />
           <Cards 

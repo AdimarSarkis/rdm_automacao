@@ -1,0 +1,18 @@
+button{
+  width: 90%;
+  height: 50px;
+  background: none;
+  box-shadow:
+    1.6px 0.7px 2.2px rgba(0, 0, 0, 0.123),
+    3.8px 1.7px 5.3px rgba(0, 0, 0, 0.155),
+    7.1px 3.1px 10px rgba(0, 0, 0, 0.168),
+    12.7px 5.6px 17.9px rgba(0, 0, 0, 0.168),
+    23.8px 10.4px 33.4px rgba(0, 0, 0, 0.156),
+    57px 25px 80px rgba(0, 0, 0, 0.11);
+  transition: all 0.3s ease;
+
+}
+button:hover{
+  background: #ee961a;
+  transform: scale(1.04);
+}

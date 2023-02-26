@@ -1,0 +1,33 @@
+.top{
+  width: 100vw;
+  height: 110px;
+  padding: 0;
+  background-color: #323232
+}
+.download{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.downloads #details{
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+}
+@media (max-width: 780px){
+  .btn{
+    width: 400px;
+  }
+}
