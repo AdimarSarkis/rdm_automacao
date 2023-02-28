@@ -13,19 +13,22 @@ const Header = () => {
       setIsOn(true);
     }
   }
+
+
   return (
     <header>
-      <a href="#" className="brand">
+      <a href="/home" className="brand">
         <img src={logo} alt="logo" />
       </a>
       <div className={`menu-btn ${isOn ? "active" : ""}`} onClick={buttonClicked}></div>
       <div className={`navigation ${isOn ? "active" : ""}`}>
         <div className="navigation-items">
-          <a href="#">Inicio</a>
-          <a href="#">Sobre nós</a>
-          <a href="#">Downloads</a>
-          <a href="#">Sistemas</a>
-          <a href="#">Suporte Online</a>
+          <a href="/home">Inicio</a>
+          <a href="/sobrenos">Sobre nós</a>
+          <a href="/downloads">Downloads</a>
+          <a href="/sistemas">Sistemas</a>
+          <a href="/contato">Contato</a>
+          <a href="https://servidorseguro.mysuite1.com.br/client/chatan.php?h=&inf=&lfa=&sl=rda">Suporte Online</a>
         </div>
       </div>
     </header>

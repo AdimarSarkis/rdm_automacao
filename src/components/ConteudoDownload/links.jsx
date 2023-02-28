@@ -7,7 +7,7 @@ import ButtonsDownloads from '../ButtonsDownloads/index.jsx';
   const SHOW_MY_PC_URL = "https://firebasestorage.googleapis.com/v0/b/rdmautomacao-26c5f.appspot.com/o/ShowMyPC3161.rar?alt=media&token=1c45b329-adda-472c-baf3-6cde5fe786ea"
   
 
-
+/*
   // utilitarios
   const CISS_MONITORKEY_ATUALIZATION_URL = "https://firebasestorage.googleapis.com/v0/b/rdmautomacao-26c5f.appspot.com/o/CISSMonitorKey_2_19_Atualizador.rar?alt=media&token=4858948c-c69a-40ae-98be-c0dda150e891"
   const CISS_MONITORKEY_INSTALL_URL = "https://firebasestorage.googleapis.com/v0/b/rdmautomacao-26c5f.appspot.com/o/CISSMonitorKey_2_19_Instalador.rar?alt=media&token=e05a7d1d-a011-4402-8577-ee2b92aea585"
@@ -16,36 +16,17 @@ import ButtonsDownloads from '../ButtonsDownloads/index.jsx';
   // Tabelas
   const NCM_202017_URL = "https://firebasestorage.googleapis.com/v0/b/rdmautomacao-26c5f.appspot.com/o/NCM_202017.rar?alt=media&token=6afb15ee-1139-49e7-bfe9-5fc865cb6191"
   const TABELAS_UNI_MED_URL = "https://firebasestorage.googleapis.com/v0/b/rdmautomacao-26c5f.appspot.com/o/TABELA%20UNIDADE%20DE%20MEDIDAS.rar?alt=media&token=ab9bf96c-d4e1-4890-99d2-defa2004d7c9"
-
+*/
   export const AcessoRemoto = () => {
     return (
       <div className='btn'>
         <ButtonsDownloads url={ANY_DESK_URL} name="Any Desk"/>
         <ButtonsDownloads url={TEAM_VIEWER_URL} name="Team viewer"/>
-        <ButtonsDownloads url={SHOW_MY_PC_URL} name="Show my PC"/>
       </div>
     );
   }
   
-  export const Utilitarios = () => {
-    return (
-      <div className='btn'>
-        <ButtonsDownloads url={CISS_MONITORKEY_ATUALIZATION_URL} name="CISS Atualizador"/>
-        <ButtonsDownloads url={CISS_MONITORKEY_INSTALL_URL} name="CISS INSTALADOR"/>
-        <ButtonsDownloads url={FILE_ZILLA_URL} name="FileZilla"/>
-        <ButtonsDownloads url={WIN_SQL_URL} name="WinSql"/>
-      </div>
-    );
-  }
   
-  export const Tabelas = () => {
-    return (
-      <div className='btn'>
-        <ButtonsDownloads url={NCM_202017_URL} name="Tabela NCM"/>
-        <ButtonsDownloads url={TABELAS_UNI_MED_URL} name="Tabela unidade de medidas"/>
-      </div>
-    );
-  }
   
   
 

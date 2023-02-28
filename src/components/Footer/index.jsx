@@ -19,9 +19,8 @@ const Footer = () => {
         <span>Email: suporte.am@automacaordm.com.br</span> 
       </div>
       <div className='social'>
-        <a href="#" target="_blank" rel="noopener noreferrer"><FiFacebook/></a>
-        <a href="#" target="_blank" rel="noopener noreferrer"><FiInstagram/></a>
-        <a href="#" target="_blank" rel="noopener noreferrer"><FiYoutube/></a>
+        <a href="https://www.facebook.com/www.automacaordm.com.br/" target="_blank" rel="noopener noreferrer"><FiFacebook/></a>
+        <a href="https://instagram.com/rdm_automacao?igshid=YmMyMTA2M2Y= " target="_blank" rel="noopener noreferrer"><FiInstagram/></a>
       </div>
     </div>
   );
