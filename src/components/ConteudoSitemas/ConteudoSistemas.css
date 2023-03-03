@@ -1,0 +1,18 @@
+.btn-mais{
+  width: 300px;
+  position: relative;
+  left: 20%;
+  bottom: 320px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.text{
+  position: relative;
+  color: #ee961a;
+  bottom: 320px;
+  left: 20%;
+  font-size: 3rem;
+  font-weight: 700;
+}
