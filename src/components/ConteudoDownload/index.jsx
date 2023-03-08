@@ -10,7 +10,7 @@ const ConteudoDownload = () => {
         <div className='top'></div>
        <p id="details">A RDM disponibiliza as Ferramentas para facilitar o atendimento.</p> 
         <div className="download">
-          <Cards className='card'
+          <Cards className='cardDownload'
             icone="remote"
             title="Acesso Remoto"
             body={<AcessoRemoto />}

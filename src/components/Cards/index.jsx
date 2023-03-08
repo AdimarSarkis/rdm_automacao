@@ -1,6 +1,8 @@
 import {FaRegLightbulb, FaPencilAlt, FaPaperclip, FaFileInvoiceDollar} from 'react-icons/fa';
 import {BiMessageDetail} from 'react-icons/bi';
-import { VscRemoteExplorer, VscSymbolProperty } from "react-icons/vsc";
+import { VscRemoteExplorer, VscSymbolProperty, VscGraph } from "react-icons/vsc";
+import {BsGraphDown} from 'react-icons/bs';
+import {SiGooglesheets} from 'react-icons/si';
 import "./Cards.css";
 
 const Cards = ({title, body, icone}) => {
@@ -11,8 +13,12 @@ const Cards = ({title, body, icone}) => {
           icone == "clip" ? <FaPaperclip className='icon' /> : (
             icone == "messsage" ? <BiMessageDetail className='icon' /> : (
               icone == "tabelas" ? <FaFileInvoiceDollar className='icon'/> : (
-                icone == "remote" ? <VscRemoteExplorer className='icon' /> :
-                  <VscSymbolProperty className='icon' /> 
+                icone == "remote" ? <VscRemoteExplorer className='icon' /> : (
+                  icone == "graf" ? <VscGraph className='icon' /> : (
+                    icone == "desc" ? < BsGraphDown className='icon'/> : (
+                      icone == "planilha" ? <SiGooglesheets className='icon'/> : <VscSymbolProperty className='icon' /> )
+                  )
+                )
               )
             ))
         )

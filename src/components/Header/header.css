@@ -28,6 +28,7 @@ header .navigation .navigation-items a{
   transition: 0.3s ease;
   padding: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 header .navigation .navigation-items a:last-child{

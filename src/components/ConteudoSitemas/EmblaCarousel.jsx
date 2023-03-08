@@ -1,6 +1,8 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import ReactDOM, { createRoot } from "react-dom/client";
+import React, { useCallback, useEffect, useState, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { flushSync } from 'react-dom';
+import { Link } from 'react-router-dom';
 import imageByIndex from './imageByindex.jsx';
 import {textByIndex} from './imageByindex.jsx';
 import "./embla.css";
@@ -47,6 +49,7 @@ const EmblaCarousel = (props) => {
     emblaApi.on('reInit', onScroll)
   }, [emblaApi, onScroll])
 
+  
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -72,7 +75,9 @@ const EmblaCarousel = (props) => {
                   />
                  
                   <p className='text'>{textByIndex(index)}</p>
-                  <button className='btn-mais'> SAIBA MAIS </button>
+                  <Link to={`/sistemas/${index}`}><button className='btn-mais'>
+                     SAIBA MAIS </button>
+                  </Link>
                  
                 </div>
               </div>

@@ -45,26 +45,26 @@ trazendo soluções Completas e avançadas
 Trabalhamos com serviços e produtos de primeira linha a fim de proporcionar aos nossos clientes conforto e segurança na hora de automatizar seu estabelecimento. 
 Utilizando o poderoso Sistema CISSPoder traz divervas vantagens</span>
         <div className='cards'>
-          <Cards 
+          <Cards
             title="Oferecendo para sua loja"
             icone="bulb"
             body={oferecendoParaLoja}
           />
-          <Cards 
+          <Cards
             title="Suporte ágil com a RDM Automação"
             icone="messsage"
             body={suporteRdm}
           />
-          <Cards 
+          <Cards
             title="Controle Fiscal"
             icone="pencil"
             body={controleFiscal}
           />
-          <Cards 
+          <Cards
             title="Ramos de Atividades"
             icone="clip"
             body={ramosAtividade}
-  />
+          />
         </div>
       </div>
       
