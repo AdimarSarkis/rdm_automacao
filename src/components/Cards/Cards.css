@@ -33,6 +33,14 @@
 .title{
   color: #ee961a;
 }
+.image{
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+.image img{
+  object-fit: cover;
+}
 span{
   text-align: justify;
   text-justify: inter-character;

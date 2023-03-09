@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 .img{
   height: 80vh;
-  width: 100vw;
+  width: 99.9vw;
   background-image: url(../../assets/fachadaRdm.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   object-fit: cover;
 }
 .conteudo-home{
-  padding: 50px;
+  padding: 30px;
 }
 .conteudo-home .inicial{
   font-size:1.5rem;
@@ -28,11 +28,27 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+  width: 98%;
 }
 
 
-@media (max-width: 780px){
+@media (max-width: 600px){
+  
+}
+@media (max-width:600px) {
   .conteudo-home{
-    padding: 20px;
+    padding: 3px;
+  }
+  .cards{
+    padding: 0px;
+    margin-top: 20px;
+    position: relative;
+    top: 7px;
+    right: 8px;
+    diplay: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
   }
 }
