@@ -9,7 +9,8 @@ import Atacarejo from './components/ConteudoSitemas/Atacarejo';
 import Selfcheckout from './components/ConteudoSitemas/Selfcheckout';
 import Radar from './components/ConteudoSitemas/Radar';
 import CissBox from './components/ConteudoSitemas/CissBox';
-
+import Edit from "./pages/Edit";
+import Login from "./pages/Login";
 export function Router() {
 
   return (
@@ -20,6 +21,8 @@ export function Router() {
       <Route path="/sobrenos" element={<SobreNos />} />
       <Route path="/sistemas" element={<Sistemas />} />
       <Route path="/contato" element={<Contato />} />
+      <Route path="/login" element={<Login/>} /> 
+      <Route path="/edit" element={<Edit/>} /> 
       <Route path="/sistemas/0" element={<Atacarejo/>} />
       <Route path="/sistemas/1" element={<Selfcheckout/>} />
       <Route path="/sistemas/2" element={<CissBox/>} />

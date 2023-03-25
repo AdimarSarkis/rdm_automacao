@@ -1,0 +1,83 @@
+.container-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputBox input{
+  width: 90%;
+  padding: 5px 0;
+  font-size: 1.1em;
+  margin: 15px 0;
+  position: relative;
+  left: 5%;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  resize: none;
+  background: none;
+  color: #000;
+}
+.inputBox i{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #323232;
+  overflow: hidden;
+}
+.inputBox i::before{
+  content: '';
+  position: absolute;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: animacao 2s linear infinite;
+  transition: 0.5s;
+}
+.inputBox span{
+  position: absolute;
+  left: 28%;
+  pointer-events: none;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: rgb(155, 155, 155);
+  transition: 0.5s;
+}
+.inputBox input:focus ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox input:valid ~ span{
+  background: blue;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.9em;
+  transform: translateY(-23px);
+  color: #ee961a;
+}
+#dataInicio{
+  margin: 15px 0;
+  font-size: 0.9em;
+  transform: translateY(-23px);
+}
+input:valid ~ i::before,
+textarea:valid ~ i::before,
+input:focus ~ i::before,
+textarea:focus ~ i::before{
+  left: 0;
+}
+textarea{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+button{
+  position: relative;
+  left: 5%;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
